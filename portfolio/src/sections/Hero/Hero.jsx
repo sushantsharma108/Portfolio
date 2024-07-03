@@ -13,7 +13,7 @@ import { useTheme } from "../../common/ThemeContext";
 
 const Hero = () => {
   const { theme, toggleTheme } = useTheme();
-  const themeIcon = theme === 'light' ? sun: moon;
+  const themeIcon = theme === 'light' ? sun : moon;
   const twitterIcon = theme === 'light' ? twitterLight : twitterDark;
   const githubIcon = theme === 'light' ? githubLight : githubDark;
   const linkedInIcon = theme === 'light' ? linkedinLight : linkedinDark;
@@ -40,27 +40,27 @@ const Hero = () => {
         <h2>Frontend Developer</h2>
         <span>
 
-          <a href="https://github.com/sushantsharma108">
+          <a href="https://www.linkedin.com/in/sushantsharma06" target="_blank" rel="noopener noreferrer">
             <img
               className={styles.icon}
               src={linkedInIcon}
-              alt="GitHub"
+              alt="linkedin"
             />
           </a>
 
-          <a href="https://github.com/sushantsharma108">
+          <a href="https://github.com/sushantsharma108" target="_blank" rel="noopener noreferrer">
             <img
               className={styles.icon}
               src={githubIcon}
-              alt="GitHub"
+              alt="github"
             />
           </a>
 
-          <a href="https://github.com/sushantsharma108">
+          <a href="mailto:sushant@example.com" target="_blank" rel="noopener noreferrer">
             <img
               className={styles.icon}
               src={twitterIcon}
-              alt="GitHub"
+              alt="x-twitter"
             />
           </a>
 
@@ -72,36 +72,10 @@ const Hero = () => {
           <button className="resume">Resume</button>
         </a>
 
-
       </div>
 
-
     </section>
-
-
-
-
   );
 };
 
 export default Hero;
-
-{/* <a href="https://github.com/sushantsharma108" target="_blank" rel="noopener noreferrer">
-GitHub
-</a>
-{" | "}
-<a href="https://www.linkedin.com/in/sushant-sharma-096b4b180/" target="_blank" rel="noopener noreferrer">
-      LinkedIn
-</a>
-{" | "}
-<a href="mailto:sushant@example.com" target="_blank" rel="noopener noreferrer">
-      Email
-</a>
-{" | "}
-<a href="https://www.instagram.com/sushant_sharma/" target="_blank" rel="noopener noreferrer">
-      Instagram
-</a>
-{" | "}
-<a href="https://twitter.com/sushantsharma101" target="_blank" rel="noopener noreferrer">
-      Twitter
-</a> */}
