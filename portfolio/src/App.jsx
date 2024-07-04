@@ -2,6 +2,7 @@ import Hero from "./sections/Hero/Hero";
 import Projects from "./sections/Projects/Projects";
 import Skills from "./sections/Skills/Skills";
 import "./App.css";
+import Contact from "./sections/Contact/Contact";
 
 function App() {
   // const raw = [
@@ -16,7 +17,8 @@ function App() {
     <>
       <Hero />
       <Projects />
-      <Skills/>
+      <Skills />
+      <Contact />
     </>
   );
 }
