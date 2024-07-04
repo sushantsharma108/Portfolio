@@ -31,7 +31,7 @@
 }
 
 .motto {
-  max-width: 50ch;
+  max-width: 25ch;
 }
 span {
   display: flex;
@@ -48,6 +48,7 @@ a {
 button {
   padding: 15px 30px;
   font-size: 22px;
+  font-weight: 600;
   letter-spacing: 2px;
   border: none;
   border-radius: 25px;
@@ -63,3 +64,10 @@ button:active {
   transform: translateY(2px);
   box-shadow: 3px 3px 4px rgba(0, 0, 0, 1);
 }
+
+/* Hero Section CSS done above */
+
+
+
+
+
