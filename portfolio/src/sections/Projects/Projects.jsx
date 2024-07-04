@@ -1,28 +1,44 @@
-import styles from '../../sections/Projects/ProjectStyles.module.css'
+import styles from "../Projects/ProjectStyles.module.css";
+import ProjectCard from "../../common/ProjectCard";
+import viberr from "../../assets/viberr.png";
+import freshBurger from "../../assets/fresh-burger.png";
+import hipsster from "../../assets/hipsster.png";
+import fitlift from "../../assets/fitlift.png";
 
-const Projects = ({ data }) => {
+const Projects = () => {
   return (
-    <div className={styles.projects}>
-      <h1>Projects</h1>
-
-      {data.map((item, index) => (
+    <section className={styles.container}>
+      <h1 className={styles.sectionTitle}>Projects</h1>
+      <div className={styles.projectsContainer}>
         
-        <div key={index} className={styles.projects}>
-          <div className={styles.images}>
-            <img src={item.image} alt="" srcset="" />
-          </div>
+        <ProjectCard
+          src={viberr}
+          link="https://www.github.com/sushantsharma108"
+          h3="Viberr"
+          p="Web Streaming App"
+        />
+        <ProjectCard
+          src={freshBurger}
+          link="https://www.github.com/sushantsharma108"
+          h3="FreshBurger"
+          p="Burger Restaurant"
+        />
+        <ProjectCard
+          src={hipsster}
+          link="https://www.github.com/sushantsharma108"
+          h3="Hipsster"
+          p="Glasses Shop"
+        />
+        <ProjectCard
+          src={fitlift}
+          link="https://www.github.com/sushantsharma108"
+          h3="Fitlift"
+          p="Fitness App"
+        />
 
-          <div className={styles.appInfo}> 
-            <h2>{item.appName}</h2>
-            <p>{item.appCategory}</p>
-            <a href={item.link} target="_blank" rel="noopener noreferrer">Visit Site</a>
-          </div>
-        </div>
-      ))}
+      </div>
+    </section>
+  );
+};
 
-      <button onClick={() => alert('Coming Soon!')}>View More</button>
-    </div>
-  )
-}
-
-export default Projects
+export default Projects;
