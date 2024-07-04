@@ -3,9 +3,9 @@ import styles from '../sections/Skills/SkillsStyles.module.css'
 
 const SkillsCard = ({ src, data }) => {
     return (
-        data.map((item, index) => (
+        data.map((item, index) =>(
             <span key={index} className={styles.skills} >
-                <img src={src}/>
+                <img src={src} />
                 <p>{item}</p>
             </span>
         ))

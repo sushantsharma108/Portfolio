@@ -1,16 +1,16 @@
 .container{
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 25px;
     text-align: center;
-
-    .skills{
+    gap: 25px;
+    
+    h1{
+        margin: 20px;
+    }
+    span{
         display: flex;
-        justify-content: space-between;
         align-items: center;
-        /* width: 100%; */
+        gap: 2px;
         color: var(--text-color);
     }
     img{
