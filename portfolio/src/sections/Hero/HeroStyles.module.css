@@ -1,28 +1,65 @@
-.container{
-
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 25px;
+  text-align: center;
+  height: 100dvh; /* dvh --- device height*/
+  min-height: 500px;
 }
 
-.colorModeContainer{
-
+.colorModeContainer {
+  position: relative;
 }
 
-.colorMode{
-
+.colorMode {
+  position: absolute;
+  right: 0;
+  width: 38px;
+}
+.colorMode:hover {
+  cursor: pointer;
+}
+.hero {
+  max-width: 200px;
 }
 
-.hero{
-
+.info {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
 }
 
-.info{
-
+.motto {
+  max-width: 50ch;
+}
+span {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
 }
 
-.motto{
-
+a {
+  margin: 0;
+  width: fit-content;
+  align-self: center;
 }
 
-.resume{
-
+button {
+  padding: 15px 30px;
+  font-size: 22px;
+  letter-spacing: 2px;
+  border: none;
+  border-radius: 25px;
+  background-color: var(--btn-color);
+  color: var(--btn-text-color);
+  box-shadow: 3px 3px 4px rgba(0, 0, 0, 1);
+  transition: box-shadow 200ms ease-in-out, transform 200ms ease-in-out;
 }
-
+button:hover {
+  transform: scale(1.1);
+}
+button:active {
+  transform: translateY(2px);
+  box-shadow: 3px 3px 4px rgba(0, 0, 0, 1);
+}

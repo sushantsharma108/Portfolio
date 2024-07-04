@@ -66,7 +66,7 @@ const Hero = () => {
 
         </span>
 
-        <p id="motto">With a passion for developing modern React web applications for commercial businesses.</p>
+        <p className={styles.motto}>With a passion for developing modern React web applications for commercial businesses.</p>
 
         <a href={cv} download>
           <button className="resume">Resume</button>

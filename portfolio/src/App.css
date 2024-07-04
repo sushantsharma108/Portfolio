@@ -1,7 +1,7 @@
 /* This is the basic styling which our page will follow. Here custom css for components is not present. */
 :root {
   --background-color: #fff;
-  --btn-color: #0987f2;
+  --btn-color: #40a0f4;
   --btn-text-color: #fff;
   --project-card-bg: #ffffff00;
   --text-color: #222;
@@ -11,8 +11,8 @@
 
 [data-theme="dark"] {
   --background-color: #222;
-  --btn-color: #fff;
-  --btn-text-color: #222;
+  --btn-color: #40a0f4;
+  --btn-text-color: #fff;
   --project-card-bg: #fff;
   --text-color: #fff;
   --form-text-color: #fff;
@@ -41,6 +41,7 @@ p {
 h1,
 h2 {
   text-transform: uppercase;
+  letter-spacing: 3px;
 }
 h1 {
   font-size: 40px;
@@ -49,7 +50,7 @@ h2 {
   font-size: 28px;
 }
 p{
-    font-size: 22px;
+    font-size: 28px;
 }
 .sectionTitle{
     margin-bottom: 30px;
