@@ -5,7 +5,7 @@ const Contact = () => {
     return (
         <section id='contact' className={styles.container}>
             <h1>Contact</h1>
-            <form action='' className={styles.contactForm}>
+            <form action='' className={styles.contactForm} autoComplete='off'>
                 <div className="formGroup">
                     <label htmlFor="name" hidden>Name</label>
                     <input id={styles.name} name="name" type="text" placeholder="Name" required />
@@ -18,7 +18,7 @@ const Contact = () => {
                     <label htmlFor="message" hidden>Message</label>
                     <textarea id={styles.message} name="message" type="textbox" placeholder="Message" required />
                 </div>
-                <input type="submit">Submit</input>
+                <button type='submit'>Submit</button>
             </form>
         </section>
     )
