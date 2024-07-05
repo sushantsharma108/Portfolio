@@ -18,7 +18,7 @@ const Contact = () => {
                     <label htmlFor="message" hidden>Message</label>
                     <textarea id={styles.message} name="message" type="textbox" placeholder="Message" required />
                 </div>
-                <button type='submit'>Submit</button>
+                <input className="hover btn" type="submit" value="Submit" />
             </form>
         </section>
     )
