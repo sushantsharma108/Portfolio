@@ -2,10 +2,14 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  gap: 25px;
+  gap: 20px;
   text-align: center;
   height: 100dvh; /* dvh --- device height*/
   min-height: 500px;
+
+  .hero {
+    max-width: 200px;
+  }
 }
 
 .colorModeContainer {
@@ -15,23 +19,22 @@
 .colorMode {
   position: absolute;
   right: 0;
-  width: 38px;
+  width: 25px;
 }
 .colorMode:hover {
   cursor: pointer;
-}
-.hero {
-  max-width: 200px;
 }
 
 .info {
   display: flex;
   flex-direction: column;
-  gap: 25px;
+  gap: 20px;
 }
 
 .motto {
-  max-width: 25ch;
+  max-width: 300px;
+  margin-left: 55px;
+  line-height: 1.5;
 }
 span {
   display: flex;
@@ -65,9 +68,24 @@ button:active {
   box-shadow: 3px 3px 4px rgba(0, 0, 0, 1);
 }
 
-/* Hero Section CSS done above */
+@media (width >= 800px) {
+  .container {
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: space-evenly;
 
+    .hero {
+      max-width: 350px;
+      width: 350px;
+    }
+  }
+}
 
-
-
-
+@media (width >= 1400px) {
+  .container {
+    .hero {
+      max-width: 400px;
+      width: 400px;
+    }
+  }
+}

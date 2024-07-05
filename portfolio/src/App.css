@@ -41,20 +41,54 @@ p {
 h1,
 h2 {
   text-transform: uppercase;
-  letter-spacing: 3px;
+  /* letter-spacing: 3px; */
 }
-h1 {
-  font-size: 3rem;
+h1{
+  font-size: 32px;
 }
-h2 {
-  font-size: 28px;
+h2,h3 {
+  font-size: 20px;
 }
 p{
-    font-size: 28px;
+    font-size: 16px;
+    font-weight: 300;
 }
 .sectionTitle{
     margin-bottom: 30px;
 }
 .hover{
     transition: all 0.3s ease-in-out;
+}
+
+@media (width >= 800px) {
+  #root {
+    gap: 100px;
+  }
+  h1 {
+    font-size: 40px;
+  }
+  h2,
+  h3 {
+    font-size: 24px;
+  }
+  p {
+    font-size: 20px;
+  }
+
+  .sectionTitle {
+    margin-bottom: 60px;
+  }
+
+  @media (width >= 1400px) {
+    #root {
+      gap: 200px;
+    }
+    h1 {
+      font-size: 48px;
+    }
+
+    .sectionTitle {
+      margin-bottom: 75px;
+    }
+  }
 }
