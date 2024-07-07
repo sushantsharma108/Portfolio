@@ -5,19 +5,19 @@ import freshBurger from "../../assets/fresh-burger.png";
 import hipsster from "../../assets/hipsster.png";
 import fitlift from "../../assets/fitlift.png";
 
-const Projects = () => {
+const Projects = (props) => {
   return (
     <section className={styles.container}>
       <h1 className={styles.sectionTitle}>Projects</h1>
       <div className={styles.projectsContainer}>
         
         <ProjectCard
-          src={viberr}
+          src={props.image}
           link="https://www.github.com/sushantsharma108"
-          h3="Viberr"
-          p="Web Streaming App"
+          h3={props.appName}
+          p={props.appcategory}
         />
-        <ProjectCard
+        {/* <ProjectCard
           src={freshBurger}
           link="https://www.github.com/sushantsharma108"
           h3="FreshBurger"
@@ -34,7 +34,7 @@ const Projects = () => {
           link="https://www.github.com/sushantsharma108"
           h3="Fitlift"
           p="Fitness App"
-        />
+        /> */}
 
       </div>
     </section>
