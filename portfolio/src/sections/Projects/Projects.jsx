@@ -5,37 +5,21 @@ import freshBurger from "../../assets/fresh-burger.png";
 import hipsster from "../../assets/hipsster.png";
 import fitlift from "../../assets/fitlift.png";
 
-const Projects = ({data}) => {
+const Projects = ({ data }) => {
   return (
     <section className={styles.container}>
       <h1 className={styles.sectionTitle}>Projects</h1>
       <div className={styles.projectsContainer}>
-        {data.map((item)=>{
-          <ProjectCard project={item}/>
+        {data.map((item) => {
+          return (
+            <ProjectCard src={item.image} link={item.link} h3={item.appName} p={item.appCategory} />
+          )
         })}
-        
-        {/* <ProjectCard
-          src={freshBurger}
-          link="https://www.github.com/sushantsharma108"
-          h3="FreshBurger"
-          p="Burger Restaurant"
-        />
-        <ProjectCard
-          src={hipsster}
-          link="https://www.github.com/sushantsharma108"
-          h3="Hipsster"
-          p="Glasses Shop"
-        />
-        <ProjectCard
-          src={fitlift}
-          link="https://www.github.com/sushantsharma108"
-          h3="Fitlift"
-          p="Fitness App"
-        /> */}
-
       </div>
     </section>
   );
 };
 
 export default Projects;
+
+
