@@ -5,18 +5,15 @@ import freshBurger from "../../assets/fresh-burger.png";
 import hipsster from "../../assets/hipsster.png";
 import fitlift from "../../assets/fitlift.png";
 
-const Projects = (props) => {
+const Projects = ({data}) => {
   return (
     <section className={styles.container}>
       <h1 className={styles.sectionTitle}>Projects</h1>
       <div className={styles.projectsContainer}>
+        {data.map((item)=>{
+          <ProjectCard project={item}/>
+        })}
         
-        <ProjectCard
-          src={props.image}
-          link="https://www.github.com/sushantsharma108"
-          h3={props.appName}
-          p={props.appcategory}
-        />
         {/* <ProjectCard
           src={freshBurger}
           link="https://www.github.com/sushantsharma108"
