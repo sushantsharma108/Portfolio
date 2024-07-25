@@ -6,7 +6,7 @@ import linkedinLight from "../../assets/linkedin-light.svg";
 import linkedinDark from "../../assets/linkedin-dark.svg";
 import githubLight from "../../assets/github-light.svg";
 import githubDark from "../../assets/github-dark.svg";
-import cv from "../../assets/cv.pdf"
+import resume from "../../assets/Resume_Sushant.pdf";
 import { useTheme } from "../../common/ThemeContext";
 
 const Hero = () => {
@@ -57,7 +57,7 @@ const Hero = () => {
 
         <p className={styles.motto}>With a passion for developing modern React web applications for commercial businesses.</p>
 
-        <a href={cv} download>
+        <a href={resume} download>
           <button className="resume">Resume</button>
         </a>
 
