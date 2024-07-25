@@ -28,8 +28,6 @@ body {
 ::-webkit-scrollbar {
   width: 5px;
   height: 25px;
-  --background-color: #222;
-  --text-color: #fff;
 }
 
 /* Track */
