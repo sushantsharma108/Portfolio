@@ -1,25 +1,40 @@
-.container{
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    gap: 20px;
-    
-    h1{
-        margin: 20px;
-    }
-    span{
-        display: flex;
-        align-items: center;
-        gap: 2px;
-        color: var(--text-color);
-    }
-    img{
-        width: 40px;
-        height: 20px;
-    }
+.container {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  gap: 20px;
+
+  h1 {
+    margin: 20px;
+  }
+
+  img {
+    width: 5vw;
+    height: 5vw;
+    padding: 1.5vw;
+    border-radius: 10px;
+  }
 }
-@media(width >= 800px){
-    p{
-        font-size: 80px;
-    }
+#skillCard {
+  display: flex;
+  color: var(--text-color);
+}
+#img_cp {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 5vw 15vw;
+  gap: 5vw;
+}
+#imgComp {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+}
+
+
+@media (width >= 800px) {
+  p {
+    font-size: 80px;
+  }
 }
