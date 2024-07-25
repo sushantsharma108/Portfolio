@@ -25,6 +25,25 @@ body {
   justify-content: center;
   margin: 0 auto 60px;
 }
+::-webkit-scrollbar {
+  width: 5px;
+  height: 25px;
+  --background-color: #222;
+  --text-color: #fff;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey;
+  border-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #40a0f4;
+  border-radius: 10px;
+}
+
 #root {
   display: flex;
   flex-direction: column;
