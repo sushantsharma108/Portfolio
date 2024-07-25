@@ -5,16 +5,16 @@ const ProjectCard = (props) => {
     return (
         <div>
             <div id={styles.project}>
-                <a href={props.link} target="_blank">
-                    <img className={styles.hover} src={props.src} alt="" srcset="" />
+                <a href={props.webLink} target="_blank">
+                    <img className={styles.hover} src={props.src} alt="" />
                     <h3>{props.h3}</h3>
                     <p>{props.p}</p>
                 </a>
             </div>
 
             <div id={styles.git}>
-                <a href={props.link} target="_blank">
-                    <i id={styles.icon} class="ri-github-fill"></i>
+                <a href={props.gitLink} target="_blank">
+                    <i id={styles.icon} className="ri-github-fill"></i>
                 </a>
             </div>
         </div>
