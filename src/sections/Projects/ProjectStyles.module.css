@@ -1,6 +1,7 @@
 .container {
   display: flex;
   flex-direction: column;
+  /* justify-content: center; */
   text-align: center;
   gap: 50px;
 
@@ -25,13 +26,26 @@
   h3 {
     font-size: 40px;
   }
+  p {
+    margin-bottom: 40px;
+    font-size: 20px;
+    line-height: 1.5;
+  }
+  #icon {
+    font-size: 3vw;
+  }
 }
 .projectsContainer {
   display: flex;
+  justify-content: center;
   flex-direction: column;
   align-items: center;
   gap: 50px;
   margin: 50px auto;
+}
+
+#project:hover{
+    transform: scale(1.1);
 }
 @media (width >= 800px) {
   .projectsContainer {
