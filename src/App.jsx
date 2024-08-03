@@ -20,7 +20,7 @@ function App() {
         "https://img.freepik.com/free-photo/portrait-male-working-nurse_23-2150829769.jpg?t=st=1721911534~exp=1721915134~hmac=01aa64e306575b8a240fd125831f1133d72301818ce5af4a64862e5e8d1a045a&w=996",
       websiteLink: "https://denty-tech.netlify.app",
       githubLink: "https://github.com/sushantsharma108/PROJECTS/tree/main/Project1-Dentytech",
-      appName: "DentyTech",
+      appName: "Dentodoc",
       appCategory: "Landing Page",
     },
     {
