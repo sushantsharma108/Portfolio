@@ -9,6 +9,14 @@ function App() {
   const raw = [
     {
       image:
+        "https://www.maacindia.com/_next/image?url=https%3A%2F%2Fmaacindia-public-aptech.s3.ap-south-1.amazonaws.com%2FmaacWebsite%2Fbanner%2FBanner-Bg1707211559915.png&w=3840&q=75",
+      websiteLink: "https://gsapmagic.netlify.app",
+      githubLink: "https://github.com/sushantsharma108/GsapWebsite1",
+      appName: "GSAP Magic",
+      appCategory: "Animation",
+    },
+    {
+      image:
         "https://img.freepik.com/free-photo/wisdom-expertise-success-abundance-piled-generated-by-ai_188544-20231.jpg?t=st=1721911391~exp=1721914991~hmac=03a6e38aeba6cf3c78756885b9c64da3f709ef995c6f90f6826b08e6756deefd&w=1060",
       websiteLink: "https://code-boss.netlify.app",
       githubLink: "https://github.com/sushantsharma108/CodeBoss-Landing-Page",
